@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>POMODORO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>POMODORO</h1>
+    <img src="smile.png" alt="">
+    <div class="ui" id="timer"></div>
+    <br>
+    <div class="input">
+        <input type="number" id="hours" placeholder="Jam">
+        <input type="number" id="minutes" placeholder="Menit">
+        <input type="number" id="seconds" placeholder="Detik">
+        <br>
+        <button onclick="startCountdown()">Mulai</button>
+    </div>
+
+    <audio id="audio" src="bell ringing.mp3" preload="auto"></audio>
+
+    <script>
+        let countdown;
+        let audio = document.getElementById("audio");
+    
+        function startCountdown() {
+            const hoursInput = document.getElementById("hours");
+            const minutesInput = document.getElementById("minutes");
+            const secondsInput = document.getElementById("seconds");
+        
+            const hours = parseInt(hoursInput.value) || 0;
+            const minutes = parseInt(minutesInput.value) || 0;
+            const seconds = parseInt(secondsInput.value) || 0;
+    
+            const endTime = Date.now() + (hours * 3600 * 1000 + minutes * 60 * 1000 + seconds * 1000);
+    
+            if (countdown) {
+                clearInterval(countdown);
+            }
+        
+            countdown = setInterval(function() {
+                const now = Date.now();
+                const timeRemaining = endTime - now;
+        
+                if (timeRemaining <= 0) {
+                    clearInterval(countdown);
+                    document.getElementById("timer").textContent = "Waktu habis!";
+                    playSound();
+                } else {
+                    const hoursRemaining = Math.floor(timeRemaining / 3600000);
+                    const minutesRemaining = Math.floor((timeRemaining % 3600000) / 60000);
+                    const secondsRemaining = Math.floor((timeRemaining % 60000) / 1000);
+            
+                    document.getElementById("timer").textContent = `${hoursRemaining} jam ${minutesRemaining} menit ${secondsRemaining} detik`;
+                }
+            }, 1000);
+            }
+        
+            function playSound() {
+                audio.play();
+            }
+    </script>
+</body>
+</html>

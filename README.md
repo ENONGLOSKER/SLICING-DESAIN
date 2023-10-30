@@ -1,8 +1,11 @@
 # SLICING-DESAIN
-<table align="center">
+<table>
     <tr>
         <td>
             <img src="todo-app.png" height="500px">
+        </td>
+        <td>
+            <img src="pomodoro.png"  height="500px">
         </td>
         <td>
             <img src="mobile2.png"  height="500px">
