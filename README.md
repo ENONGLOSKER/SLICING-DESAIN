@@ -2,18 +2,18 @@
 <table align="center">
     <tr>
         <td>
-            <img src="todo-app.png"/>
+            <img src="todo-app.png" height="180px">
         </td>
         <td>
-            <img src="mobile2.png"/>
+            <img src="mobile2.png"  height="180px">
         </td>
     </tr>
     <tr>
         <td>
-            <img src="mobile1a.png" alt="">
+            <img src="mobile1a.png" height="180px">
         </td>
         <td>
-            <img src="mobile1b.png" alt="">
+            <img src="mobile1b.png"  height="180px">
         </td>
     </tr>
 </table>
