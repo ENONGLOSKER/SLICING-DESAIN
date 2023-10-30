@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+.nav{
+    background-image: url('Vector.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: left top; 
+    margin-top: -10px;
+    padding-bottom: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 350px;
+    height: 30px;
+    display: flex;
+    justify-content:space-between;
+}
+.nav h1{
+    color: whitesmoke;
+    margin-top: 80px;
+    font-size: 50px;
+}
+.nav img{
+    background-color: aqua;
+    border-radius: 50px;
+    margin-top: 80px;
+    width: 50px;
+    height: 50px;
+}
+.container{
+    margin: 10px;
+}
+.container h2{
+    margin-top: -130px;
+    margin-left: 10px;
+    color: rgb(107, 233, 249);
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.menu{
+    display: flex;
+    /* background-color: blueviolet; */
+    /* padding: 10px; */
+    height: 80px;
+}
+.menu .sub{
+    display: flex;
+    background-color: rgb(252, 250, 253);
+    border-radius: 5px;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    padding-right: 23px;
+    box-shadow: 0px 5px 5px rgb(173, 173, 173);
+}
+.menu .sub .icon #icon{
+    width: 25px;
+    height: 25px;
+    color: rgb(15, 63, 206);
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.menu .sub .ket{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.ket h5{
+    font-weight: 200;
+    margin-top: -20px;
+    font-size: 12px;
+    color: rgb(178, 178, 178);
+}
+.waktu{
+    display: flex;
+    justify-content:space-evenly;
+    text-transform: capitalize;
+    color: rgb(210, 210, 210);
+}
+
+.waktu .active{
+    color: rgb(17, 72, 236);
+    text-decoration: underline;
+}
+.todo {
+    /* background-color: red; */
+}
+.todo ul li{
+    background-color: rgb(255, 255, 255);
+    margin: 8px;
+    margin-left: -30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 6px;
+    list-style-type: none;
+    color: rgb(37, 89, 247);
+    box-shadow: 3px 5px 10px rgb(218, 218, 218);
+}
+.todo ul li a{
+    text-decoration: none;margin-left: 5px;
+    margin-top: -80px;
+    text-transform: capitalize;
+}
+.tambah{
+    text-align: center;
+    /* background-color: aqua; */
+
+}
+.tambah #add{
+    width: 70px;
+    height: 70px;
+    color: rgb(37, 89, 247);
+    box-shadow: -5px 4px 30px rgb(185, 234, 248);
+    border-radius: 50px;
+}
