@@ -5,16 +5,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>POMODORO</h1>
-    <img src="smile.png" alt="">
-    <div class="ui" id="timer"></div>
-    <br>
-    <div class="input">
-        <input type="number" id="hours" placeholder="Jam">
-        <input type="number" id="minutes" placeholder="Menit">
-        <input type="number" id="seconds" placeholder="Detik">
+    <div class="container">
+        <h1>POMODORO</h1>
+        <img src="smile.png" alt="">
+        <div class="ui" id="timer"></div>
         <br>
-        <button onclick="startCountdown()">Mulai</button>
+        <div class="input">
+            <input type="number" id="hours" placeholder="Jam">
+            <input type="number" id="minutes" placeholder="Menit">
+            <input type="number" id="seconds" placeholder="Detik">
+            <br>
+            <button onclick="startCountdown()">Mulai</button>
+        </div>
     </div>
 
     <audio id="audio" src="bell ringing.mp3" preload="auto"></audio>

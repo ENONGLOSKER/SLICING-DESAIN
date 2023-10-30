@@ -7,6 +7,14 @@ body{
     background-color: rgb(255, 204, 2);
     text-align: center;
 }
+.container{
+   /* background-color: rgb(241, 19, 19); */
+   margin: 50px auto;
+   padding-left:10px;
+   padding-right:10px;
+   width: 500px;
+
+}
 h1{
     margin-top: 40px;
 }
@@ -17,25 +25,25 @@ img{
     height: 280px;
 }
 .ui{
-    margin: 85px 50px -90px 30px;
+    margin: 85px 20px -90px 20px;
     background-color: white;
     border-radius: 6px;
     box-shadow: -10px 5px 50px rgb(213, 213, 71);
     height: 100px;
-    width: 320px;
+    width: auto;
     font-size: 30px;
     font-weight: bold;
     padding: 30px 10px 10px 10px;
 }
 .input{
     /* background-color: rgb(34, 37, 245); */
-    margin: 150px 10px 10px 10px;
+    margin: 200px 10px 10px 10px;
     padding: 5px;
     border: none;
 }
 .input input{
     box-shadow: 5px 5px rgb(34, 34, 33);
-    width: 95px;
+    width: 100px;
     height: 50px;
     border-radius: 6px;
     text-align: center;
@@ -47,7 +55,7 @@ img{
 }
 .input button{
     margin-top: 50px;
-    width: 200px;
+    width: 250px;
     height: 50px;
     border-radius: 6px;
     font-size: 18px;
